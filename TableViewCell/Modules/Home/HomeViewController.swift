@@ -21,14 +21,17 @@ class HomeViewController: UIViewController {
     
     //   MARK: - Functions -> Yusuf Burak Elkan..
     func tableViewSource(){
-        let l1 = section(section: "Section")
-        let l2 = section(section: "Section1")
-        let l3 = section(section: "Section2")
-        let l4 = section(section: "Section3")
-        self.viewModel.append(l1)
-        self.viewModel.append(l2)
-        self.viewModel.append(l3)
-        self.viewModel.append(l4)
+        viewModel = [
+            section(section: "Section1"),
+            section(section: "Section2"),
+            section(section: "Section3"),
+            section(section: "Section4"),
+            section(section: "Section5"),
+            section(section: "Section6"),
+            section(section: "Section7"),
+            section(section: "Section8"),
+            section(section: "Section9"),
+        ]
         
         let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "HomeTableViewCell")
